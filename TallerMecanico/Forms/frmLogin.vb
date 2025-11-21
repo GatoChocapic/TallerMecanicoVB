@@ -1,6 +1,4 @@
 ﻿Imports MySql.Data.MySqlClient
-Imports System.Reflection
-Imports System.IO
 
 Public Class frmLogin
 

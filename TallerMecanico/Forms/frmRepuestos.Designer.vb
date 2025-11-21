@@ -39,6 +39,7 @@ Partial Class frmRepuestos
         tbBuscar = New TextBox()
         btBuscar = New Button()
         Label6 = New Label()
+        btVolver = New Button()
         CType(dgvRepuestos, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -190,7 +191,6 @@ Partial Class frmRepuestos
         tbBuscar.Size = New Size(194, 23)
         tbBuscar.TabIndex = 14
         tbBuscar.Tag = ""
-        tbBuscar.Text = "Ingrese ID o Nombre del repuesto"
         ' 
         ' btBuscar
         ' 
@@ -214,6 +214,15 @@ Partial Class frmRepuestos
         Label6.TabIndex = 16
         Label6.Text = "Buscar Repuesto"
         ' 
+        ' btVolver
+        ' 
+        btVolver.Location = New Point(500, 492)
+        btVolver.Name = "btVolver"
+        btVolver.Size = New Size(75, 23)
+        btVolver.TabIndex = 17
+        btVolver.Text = "Volver"
+        btVolver.UseVisualStyleBackColor = True
+        ' 
         ' frmRepuestos
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -221,6 +230,7 @@ Partial Class frmRepuestos
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(602, 537)
+        Controls.Add(btVolver)
         Controls.Add(Label6)
         Controls.Add(btBuscar)
         Controls.Add(tbBuscar)
@@ -262,4 +272,5 @@ Partial Class frmRepuestos
     Friend WithEvents tbBuscar As TextBox
     Friend WithEvents btBuscar As Button
     Friend WithEvents Label6 As Label
+    Friend WithEvents btVolver As Button
 End Class

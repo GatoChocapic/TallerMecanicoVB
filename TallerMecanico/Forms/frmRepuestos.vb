@@ -1,6 +1,4 @@
 ﻿Imports MySql.Data.MySqlClient
-Imports System.Reflection
-Imports System.IO
 
 Public Class frmRepuestos
     Private editando As Boolean = False
@@ -340,6 +338,11 @@ Public Class frmRepuestos
         Dim rol = rolUsuario.ToLower()
         Return rol = "gerente" OrElse rol = "administrador"
     End Function
+
+    Private Sub btVolver_Click(sender As Object, e As EventArgs) Handles btVolver.Click
+        Me.Close()
+    End Sub
+
 End Class
 
 

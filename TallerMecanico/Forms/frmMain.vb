@@ -1,8 +1,4 @@
-﻿Imports MySql.Data.MySqlClient
-Imports System.Reflection
-Imports System.IO
-
-Public Class frmMain
+﻿Public Class frmMain
     Private usuarioCorreo As String
     Private usuarioTipo As String
 
@@ -23,7 +19,7 @@ Public Class frmMain
         ' Por defecto, ocultar todos los botones al inicio para simplificar la lógica
         btnInventarioRepuestos.Visible = False
         btnGestionUsuarios.Visible = False
-
+        btRegistrarVentas.Visible = False
 
 
         Select Case usuarioTipo
@@ -31,18 +27,23 @@ Public Class frmMain
                 ' Administrador ve ambos botones
                 btnInventarioRepuestos.Visible = True
                 btnGestionUsuarios.Visible = True
-
+                btRegistrarVentas.Visible = True
+                btnGestionSiniestros.Visible = True
             Case "Gerente"
                 ' Gerente ve ambos botones
                 btnInventarioRepuestos.Visible = True
                 btnGestionUsuarios.Visible = True
+                btnGestionSiniestros.Visible = True
 
             Case "Vendedor"
                 ' Vendedor solo ve Inventario Repuestos
                 btnInventarioRepuestos.Visible = True
+                btRegistrarVentas.Visible = True
+                btnGestionSiniestros.Visible = True
                 ' btnGestionUsuarios.Visible = False (ya está oculto por defecto)
 
             Case "Mecanico", "Analista"
+                btnGestionSiniestros.Visible = False
                 ' Mecánico y Analista no ven ninguno de estos botones
                 ' (ya están ocultos por defecto)
 
@@ -89,5 +90,15 @@ Public Class frmMain
         If Me.BackgroundImage IsNot Nothing Then
             Me.BackgroundImage.Dispose()
         End If
+    End Sub
+
+    Private Sub btRegistrarVentas_Click(sender As Object, e As EventArgs) Handles btRegistrarVentas.Click
+        Dim ventasForm As New frmVentas()
+        ventasForm.ShowDialog()
+    End Sub
+
+    Private Sub btnGestionSiniestros_Click(sender As Object, e As EventArgs) Handles btnGestionSiniestros.Click
+        Dim frmSiniestros As New frmSiniestros()
+        frmSiniestros.ShowDialog()
     End Sub
 End Class

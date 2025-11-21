@@ -42,13 +42,14 @@ Partial Class frmUsuarios
         Label6 = New Label()
         tbBusquedarut = New TextBox()
         btBusquedarut = New Button()
+        btVolver = New Button()
         CType(dgvUsuarios, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' dgvUsuarios
         ' 
         dgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvUsuarios.Location = New Point(81, 146)
+        dgvUsuarios.Location = New Point(72, 122)
         dgvUsuarios.Margin = New Padding(3, 2, 3, 2)
         dgvUsuarios.Name = "dgvUsuarios"
         dgvUsuarios.RowHeadersWidth = 51
@@ -61,7 +62,7 @@ Partial Class frmUsuarios
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = SystemColors.ControlLightLight
-        Label1.Location = New Point(89, 366)
+        Label1.Location = New Point(80, 342)
         Label1.Name = "Label1"
         Label1.Size = New Size(27, 15)
         Label1.TabIndex = 2
@@ -70,7 +71,7 @@ Partial Class frmUsuarios
         ' txtRut
         ' 
         txtRut.BorderStyle = BorderStyle.FixedSingle
-        txtRut.Location = New Point(189, 358)
+        txtRut.Location = New Point(180, 334)
         txtRut.Margin = New Padding(3, 2, 3, 2)
         txtRut.Name = "txtRut"
         txtRut.Size = New Size(132, 23)
@@ -82,7 +83,7 @@ Partial Class frmUsuarios
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = SystemColors.ControlLightLight
-        Label2.Location = New Point(89, 399)
+        Label2.Location = New Point(80, 375)
         Label2.Name = "Label2"
         Label2.Size = New Size(45, 15)
         Label2.TabIndex = 4
@@ -91,7 +92,7 @@ Partial Class frmUsuarios
         ' txtCorreo
         ' 
         txtCorreo.BorderStyle = BorderStyle.FixedSingle
-        txtCorreo.Location = New Point(188, 397)
+        txtCorreo.Location = New Point(179, 373)
         txtCorreo.Margin = New Padding(3, 2, 3, 2)
         txtCorreo.Name = "txtCorreo"
         txtCorreo.Size = New Size(186, 23)
@@ -103,7 +104,7 @@ Partial Class frmUsuarios
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = SystemColors.ControlLightLight
-        Label3.Location = New Point(89, 436)
+        Label3.Location = New Point(80, 412)
         Label3.Name = "Label3"
         Label3.Size = New Size(69, 15)
         Label3.TabIndex = 6
@@ -112,7 +113,7 @@ Partial Class frmUsuarios
         ' txtContraseña
         ' 
         txtContraseña.BorderStyle = BorderStyle.FixedSingle
-        txtContraseña.Location = New Point(188, 434)
+        txtContraseña.Location = New Point(179, 410)
         txtContraseña.Margin = New Padding(3, 2, 3, 2)
         txtContraseña.Name = "txtContraseña"
         txtContraseña.PasswordChar = "*"c
@@ -125,7 +126,7 @@ Partial Class frmUsuarios
         Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = SystemColors.ControlLightLight
-        Label4.Location = New Point(89, 480)
+        Label4.Location = New Point(80, 456)
         Label4.Name = "Label4"
         Label4.Size = New Size(31, 15)
         Label4.TabIndex = 8
@@ -134,7 +135,7 @@ Partial Class frmUsuarios
         ' cmbTipo
         ' 
         cmbTipo.FormattingEnabled = True
-        cmbTipo.Location = New Point(188, 477)
+        cmbTipo.Location = New Point(179, 453)
         cmbTipo.Margin = New Padding(3, 2, 3, 2)
         cmbTipo.Name = "cmbTipo"
         cmbTipo.Size = New Size(133, 23)
@@ -143,7 +144,7 @@ Partial Class frmUsuarios
         ' btnGuardar
         ' 
         btnGuardar.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnGuardar.Location = New Point(453, 392)
+        btnGuardar.Location = New Point(444, 368)
         btnGuardar.Margin = New Padding(3, 2, 3, 2)
         btnGuardar.Name = "btnGuardar"
         btnGuardar.Size = New Size(82, 22)
@@ -154,7 +155,7 @@ Partial Class frmUsuarios
         ' btnNuevo
         ' 
         btnNuevo.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnNuevo.Location = New Point(453, 432)
+        btnNuevo.Location = New Point(444, 408)
         btnNuevo.Margin = New Padding(3, 2, 3, 2)
         btnNuevo.Name = "btnNuevo"
         btnNuevo.Size = New Size(82, 22)
@@ -166,7 +167,7 @@ Partial Class frmUsuarios
         ' 
         btnEliminar.AutoSize = True
         btnEliminar.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnEliminar.Location = New Point(453, 470)
+        btnEliminar.Location = New Point(444, 446)
         btnEliminar.Margin = New Padding(3, 2, 3, 2)
         btnEliminar.Name = "btnEliminar"
         btnEliminar.Size = New Size(82, 25)
@@ -191,7 +192,7 @@ Partial Class frmUsuarios
         chbIngresar.AutoSize = True
         chbIngresar.BackColor = Color.Transparent
         chbIngresar.ForeColor = SystemColors.ControlLightLight
-        chbIngresar.Location = New Point(122, 312)
+        chbIngresar.Location = New Point(113, 288)
         chbIngresar.Name = "chbIngresar"
         chbIngresar.Size = New Size(110, 19)
         chbIngresar.TabIndex = 14
@@ -203,7 +204,7 @@ Partial Class frmUsuarios
         chbModificar.AutoSize = True
         chbModificar.BackColor = Color.Transparent
         chbModificar.ForeColor = SystemColors.ControlLightLight
-        chbModificar.Location = New Point(255, 312)
+        chbModificar.Location = New Point(246, 288)
         chbModificar.Name = "chbModificar"
         chbModificar.Size = New Size(119, 19)
         chbModificar.TabIndex = 15
@@ -215,7 +216,7 @@ Partial Class frmUsuarios
         chbEliminar.AutoSize = True
         chbEliminar.BackColor = Color.Transparent
         chbEliminar.ForeColor = SystemColors.ControlLightLight
-        chbEliminar.Location = New Point(390, 312)
+        chbEliminar.Location = New Point(381, 288)
         chbEliminar.Name = "chbEliminar"
         chbEliminar.Size = New Size(111, 19)
         chbEliminar.TabIndex = 16
@@ -227,7 +228,7 @@ Partial Class frmUsuarios
         Label6.AutoSize = True
         Label6.BackColor = Color.Transparent
         Label6.ForeColor = SystemColors.ControlLightLight
-        Label6.Location = New Point(81, 101)
+        Label6.Location = New Point(72, 77)
         Label6.Name = "Label6"
         Label6.Size = New Size(157, 15)
         Label6.TabIndex = 17
@@ -235,19 +236,28 @@ Partial Class frmUsuarios
         ' 
         ' tbBusquedarut
         ' 
-        tbBusquedarut.Location = New Point(284, 98)
+        tbBusquedarut.Location = New Point(275, 74)
         tbBusquedarut.Name = "tbBusquedarut"
         tbBusquedarut.Size = New Size(134, 23)
         tbBusquedarut.TabIndex = 18
         ' 
         ' btBusquedarut
         ' 
-        btBusquedarut.Location = New Point(460, 97)
+        btBusquedarut.Location = New Point(451, 73)
         btBusquedarut.Name = "btBusquedarut"
         btBusquedarut.Size = New Size(75, 23)
         btBusquedarut.TabIndex = 19
         btBusquedarut.Text = "Buscar"
         btBusquedarut.UseVisualStyleBackColor = True
+        ' 
+        ' btVolver
+        ' 
+        btVolver.Location = New Point(515, 492)
+        btVolver.Name = "btVolver"
+        btVolver.Size = New Size(75, 23)
+        btVolver.TabIndex = 20
+        btVolver.Text = "Volver"
+        btVolver.UseVisualStyleBackColor = True
         ' 
         ' frmUsuarios
         ' 
@@ -256,6 +266,7 @@ Partial Class frmUsuarios
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(602, 537)
+        Controls.Add(btVolver)
         Controls.Add(btBusquedarut)
         Controls.Add(tbBusquedarut)
         Controls.Add(Label6)
@@ -303,4 +314,5 @@ Partial Class frmUsuarios
     Friend WithEvents Label6 As Label
     Friend WithEvents tbBusquedarut As TextBox
     Friend WithEvents btBusquedarut As Button
+    Friend WithEvents btVolver As Button
 End Class

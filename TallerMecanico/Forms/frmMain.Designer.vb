@@ -29,6 +29,8 @@ Partial Class frmMain
         btnCerrarSesion = New Button()
         btnSalir = New Button()
         FolderBrowserDialog1 = New FolderBrowserDialog()
+        btRegistrarVentas = New Button()
+        btnGestionSiniestros = New Button()
         SuspendLayout()
         ' 
         ' lblUsuario
@@ -37,19 +39,18 @@ Partial Class frmMain
         lblUsuario.BackColor = Color.Transparent
         lblUsuario.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblUsuario.ForeColor = SystemColors.ButtonHighlight
-        lblUsuario.Location = New Point(52, 58)
+        lblUsuario.Location = New Point(59, 77)
         lblUsuario.Name = "lblUsuario"
-        lblUsuario.Size = New Size(161, 37)
+        lblUsuario.Size = New Size(200, 46)
         lblUsuario.TabIndex = 0
         lblUsuario.Text = "Bienvenido"
         ' 
         ' btnInventarioRepuestos
         ' 
         btnInventarioRepuestos.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnInventarioRepuestos.Location = New Point(52, 163)
-        btnInventarioRepuestos.Margin = New Padding(3, 2, 3, 2)
+        btnInventarioRepuestos.Location = New Point(230, 332)
         btnInventarioRepuestos.Name = "btnInventarioRepuestos"
-        btnInventarioRepuestos.Size = New Size(142, 22)
+        btnInventarioRepuestos.Size = New Size(203, 29)
         btnInventarioRepuestos.TabIndex = 1
         btnInventarioRepuestos.Text = "Inventario Repuestos"
         btnInventarioRepuestos.UseVisualStyleBackColor = True
@@ -57,10 +58,9 @@ Partial Class frmMain
         ' btnGestionUsuarios
         ' 
         btnGestionUsuarios.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnGestionUsuarios.Location = New Point(213, 163)
-        btnGestionUsuarios.Margin = New Padding(3, 2, 3, 2)
+        btnGestionUsuarios.Location = New Point(230, 217)
         btnGestionUsuarios.Name = "btnGestionUsuarios"
-        btnGestionUsuarios.Size = New Size(178, 22)
+        btnGestionUsuarios.Size = New Size(203, 29)
         btnGestionUsuarios.TabIndex = 2
         btnGestionUsuarios.Text = "Gestion de Usuarios"
         btnGestionUsuarios.UseVisualStyleBackColor = True
@@ -68,10 +68,9 @@ Partial Class frmMain
         ' btnCerrarSesion
         ' 
         btnCerrarSesion.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnCerrarSesion.Location = New Point(433, 434)
-        btnCerrarSesion.Margin = New Padding(3, 2, 3, 2)
+        btnCerrarSesion.Location = New Point(495, 579)
         btnCerrarSesion.Name = "btnCerrarSesion"
-        btnCerrarSesion.Size = New Size(119, 22)
+        btnCerrarSesion.Size = New Size(136, 29)
         btnCerrarSesion.TabIndex = 3
         btnCerrarSesion.Text = "Cerrar Sesión"
         btnCerrarSesion.UseVisualStyleBackColor = True
@@ -79,28 +78,49 @@ Partial Class frmMain
         ' btnSalir
         ' 
         btnSalir.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnSalir.Location = New Point(470, 485)
-        btnSalir.Margin = New Padding(3, 2, 3, 2)
+        btnSalir.Location = New Point(537, 647)
         btnSalir.Name = "btnSalir"
-        btnSalir.Size = New Size(82, 22)
+        btnSalir.Size = New Size(94, 29)
         btnSalir.TabIndex = 4
         btnSalir.Text = "Salir"
         btnSalir.UseVisualStyleBackColor = True
         ' 
+        ' btRegistrarVentas
+        ' 
+        btRegistrarVentas.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btRegistrarVentas.Location = New Point(230, 377)
+        btRegistrarVentas.Margin = New Padding(3, 4, 3, 4)
+        btRegistrarVentas.Name = "btRegistrarVentas"
+        btRegistrarVentas.Size = New Size(203, 31)
+        btRegistrarVentas.TabIndex = 5
+        btRegistrarVentas.Text = "Registrar Ventas"
+        btRegistrarVentas.UseVisualStyleBackColor = True
+        ' 
+        ' btnGestionSiniestros
+        ' 
+        btnGestionSiniestros.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnGestionSiniestros.Location = New Point(230, 273)
+        btnGestionSiniestros.Name = "btnGestionSiniestros"
+        btnGestionSiniestros.Size = New Size(203, 29)
+        btnGestionSiniestros.TabIndex = 6
+        btnGestionSiniestros.Text = "Gestión de Siniestros"
+        btnGestionSiniestros.UseVisualStyleBackColor = True
+        ' 
         ' frmMain
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(602, 537)
+        ClientSize = New Size(688, 716)
+        Controls.Add(btnGestionSiniestros)
+        Controls.Add(btRegistrarVentas)
         Controls.Add(btnSalir)
         Controls.Add(btnCerrarSesion)
         Controls.Add(btnGestionUsuarios)
         Controls.Add(btnInventarioRepuestos)
         Controls.Add(lblUsuario)
         DoubleBuffered = True
-        Margin = New Padding(3, 2, 3, 2)
         Name = "frmMain"
         Text = "frmMain"
         ResumeLayout(False)
@@ -113,4 +133,6 @@ Partial Class frmMain
     Friend WithEvents btnCerrarSesion As Button
     Friend WithEvents btnSalir As Button
     Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
+    Friend WithEvents btRegistrarVentas As Button
+    Friend WithEvents btnGestionSiniestros As Button
 End Class

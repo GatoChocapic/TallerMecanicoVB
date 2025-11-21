@@ -1,7 +1,5 @@
-﻿Imports MySql.Data.MySqlClient
-Imports System.Reflection
-Imports System.IO
-Imports System.Text.RegularExpressions ' Añade esta línea para usar expresiones regulares para limpiar el RUT
+﻿Imports System.Text.RegularExpressions ' Añade esta línea para usar expresiones regulares para limpiar el RUT
+Imports MySql.Data.MySqlClient
 
 Public Class frmUsuarios
     Private editando As Boolean = False
@@ -387,5 +385,8 @@ Public Class frmUsuarios
         End Try
     End Sub
 
+    Private Sub btVolver_Click(sender As Object, e As EventArgs) Handles btVolver.Click
+        Me.Close()
+    End Sub
 End Class
 
